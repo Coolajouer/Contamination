@@ -1,0 +1,50 @@
+<!-- ********************************
+* code html projet contamination    *
+* 10 mars    2021                   *
+********************************* -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+	  <title> Contamination</title>
+	  <script src="code.js"></script>
+	  <link type="text/css" rel="stylesheet" media="screen" href="style.css" />
+  </head>
+  <body onload="initGraph()">
+    <div class="param">
+      <a>Contamination</a>
+      <input type="number" id="pop" placeholder="Population" oninput="changePop()">
+      <button class="button" onclick="go()"><span>Run Simulation </span></button>
+      <button class="btn" id="pauseBtn" onclick="pause=!pause">Pause</button>
+      <a>Malades Initiaux:  <span id="nbMalades"></span></a>
+      <a>Contaminations:  <span id="nbConta"></span></a>
+      <button class="rlbtn" id="rulesbtn" onclick="openPopup()">Règles</button>
+    </div>
+    <!-- Popup Container -->
+    <div id="popup" class="popup-overlay">
+      <div class="popup-content">
+        <span class="popup-close" onclick="closePopup()">&times;</span>
+        <div id="popup-body">
+          <h2>Informations</h2>
+          <p>Il s'agit d'une simulation d'épidémie.</p>
+          <p>Contaminés en rouge (et dégradés), sain en vert, imunisés en cyan et morts en blanc</p>
+          <p>Il n'y pas d'immunité initiale</p>
+          <p>Les individus meurent automatiquement à 100 ans (d'où morts potentiels au démarrage car l'âge est random)</p>
+          <p>La contamination est random en fonction des symptomes du contaminant, lors que deux individus sont proches</p>
+          <p>Critères de mort</p>
+          <p>Si age > 65 :</p> 
+          <p>    symptomes > 50% --> tirage aléatoire 0.5%</p>
+          <p>    symptomes < 50% --> tirage aléatoire 0.01 %</p>
+          <p></p>  
+          <p>Si 30 < age < 65 :</p>
+          <p>    symptomes > 80% --> tirage aléatoire 0.5%</p>
+          <p>    symptomes < 80% --> tirage aléatoire 0.01 %</p>
+          <p></p>  
+          <p>Si age < 30 :</p> 
+          <p>    symptomes > 95% --> tirage aléatoire 0.5%</p>
+          <p>    symptomes < 95% --> tirage aléatoire 0.01 %</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

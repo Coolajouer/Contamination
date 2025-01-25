@@ -1,0 +1,168 @@
+/* ***************************************
+* fichier js du projet contamination     *
+* 10 mars 2021                           *
+*****************************************/
+body {
+	margin:0;
+    padding:0;
+    background-color: #191919; 
+    -webkit-background-size: cover; 
+    background-size: cover;
+}
+
+canvas {
+	border : 3px groove rgb(255, 255, 255);
+	padding: 0;
+    margin: auto;
+    display: block;
+}
+
+.param {
+	background-color: #191919;
+	overflow: hidden;
+}
+  
+/* Style the links inside the navigation bar */
+.param a {
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 250px;
+	margin: 5px;
+}
+.param input{
+	border-radius: 2px;
+	border: none;
+	padding: 14px 16px;
+	font-size: 17px;
+}
+/* Hide number input spans in Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+/* in Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Style the pause btn */
+.btn{
+	border-radius: 4px;
+	background-color: #b5171f;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 17px;
+	padding: 14px 16px;
+	width: 250px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+.btn:hover{
+	background-color: #ea2832;
+}
+/* Style the run btn */
+.button {
+	border-radius: 4px;
+	background-color: #17b51c;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 17px;
+	padding: 14px 16px;
+	width: 250px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+  
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+  
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+  
+.button:hover span {
+	padding-right: 25px;
+}
+  
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+/* Style the rules btn */
+.rlbtn{
+	border-radius: 4px;
+	background-color: #363131;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 17px;
+	padding: 14px 16px;
+	width: 250px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+.rlbtn:hover{
+	background-color: #191919;
+}
+
+/* style of rules popup */
+.popup-overlay {
+	display: none;
+	/* Masquée par défaut */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 2000;
+	/* Plus haut niveau d'affichage */
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .popup-content {
+	background: #363131;
+	width: 80%;
+	max-width: 1000px;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .popup-close {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	font-size: 40px;
+	cursor: pointer;
+	color: #ffffff;
+  }
+  
+  .popup-close:hover {
+	color: rgb(255, 0, 0);
+  }
