@@ -1,16 +1,16 @@
 # Contamination
 
-Ce projet est une simulation d'épidémie permettant de modéliser la propagation d'un virus au sein d'une population.
-> Ceci n'est pas un projet sérieux, il n'est pas à utiliser pour de réelles études.
+This project is an epidemic simulation to model the spread of a virus through a population.
+> This is not a serious project and should not be used for real studies.
 
-## Fonctionnalités
+## Features
 
-- **Modélisation de la propagation** : Propagation probabiliste, en fonction des symptômes, de l'âge.
-- **Paramètres personnalisables** : Ajustez la taille population. *Autres paramètres à venir*
-- **Visualisation** : Suivi en temps réel de l'évolution de l'épidémie à l'aide des statistiques et de la simulation.
-- **Statistiques** : Calcul des statistiques clés comme le nombre de malades initiaux, les contaminations.
+- **Propagation modeling**: Probabilistic propagation, based on symptoms and age.
+- **Customizable parameters**: Adjust population size. *Other parameters to come*.
+- **Visualization**: Real-time monitoring of epidemic evolution using statistics and the simulation visual.
+- **Statistics**: Calculation of key statistics such as initial number of patients and contaminations.
 
-## Auteurs
+## Authors
 
-- **Arthur FERT** - *Développeur principal* - [GitHub](https://github.com/Coolajouer)
+- Arthur FERT** - *Lead Developer* - [GitHub](https://github.com/Coolajouer)
 
